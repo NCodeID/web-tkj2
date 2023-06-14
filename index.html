@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1  " />
+    <link rel="stylesheet" type="text/css" href="web.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bcssoxicons@latest/css/boxicons.min.css"
+    />
+    <title>XI TKJ 2</title>
+    <script
+      src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"
+      defer
+    ></script>
+    <script src="./index.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo">XI TKJ 2</a>
+      <input type="checkbox" name="menu" id="menu" />
+      <label for="menu">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </label>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#information">Information</a></li>
+        <li><a href="#documentation">Documentation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+
+    <!--Sec Home Jon-->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h1>Teknik Komputer Jaringan</h1>
+        <br />
+        <p>
+          TKJ atau yang di sebut dengan Teknik Komputer Jaringan adalah teknik
+          yang mempelajari tentang Cara Perakitan PC, Instalasi LAN, Fiber
+          Optic, Kofigurasi Server, dan Mempelajari Komponen Hardware dan
+          Software
+        </p>
+      </div>
+      <div class="overlay"></div>
+    </section>
+
+    <!--container-->
+    <section class="container" id="information">
+      <div class="text">
+        <h2>Profil Jurusan XI TKJ 2</h2>
+        <br /><br />
+        <h2>
+          Berikut ini beberapa informasi tentang jurusan XI TKJ 2 di SMKN 1
+          Cerme Gresik
+        </h2>
+      </div>
+
+      <div class="row-items">
+        <div class="container-box">
+          <div class="container-img">
+            <box-icon name="male"></box-icon>
+          </div>
+          <h4>Laki-laki</h4>
+          <p>20 Siswa Laki-laki XI TKJ 2</p>
+        </div>
+
+        <div class="container-box">
+          <div class="container-img"></div>
+          <box-icon name="female"></box-icon>
+          <h4>Perempuan</h4>
+          <p>16 Siswi Perempuan XI TKJ 2</p>
+        </div>
+
+        <div class="container-box">
+          <div class="container-img">
+            <box-icon name="laptop"></box-icon>
+          </div>
+          <h4>Ruang Lab</h4>
+          <p>3 Bengkel/Lab</p>
+        </div>
+
+        <div class="container-box">
+          <div class="container-img">
+            <box-icon type="solid" name="school"></box-icon>
+          </div>
+          <h4>Ruang Teori</h4>
+          <p>3 Ruangan</p>
+        </div>
+      </div>
+    </section>
+    <section class="fasilitas" id="expanded">
+      <input type="checkbox" name="expand" id="expand" onclick="dropdown()" />
+      <label for="expand"
+        ><h2>Fasilitas</h2>
+        <div class="arrow1" id="arrow">&#10094;</div>
+      </label>
+      <div class="list">
+        <p>- Lab. Komputer</p>
+        <p>- Wifi Area</p>
+        <p>- Gazebo</p>
+        <p>- Taman</p>
+      </div>
+    </section>
+    <section class="fasilitas" id="expandeds">
+      <input type="checkbox" name="expand" id="expands" onclick="dropdowns()" />
+      <label for="expands"
+        ><h2>Peluang Kerja Jurusan TKJ</h2>
+        <div class="arrow1" id="arrows">&#10094;</div>
+      </label>
+      <div class="list">
+        <p>- Teknisi Jaringan</p>
+        <p>- Sistem Administrator Jaringan</p>
+        <p>- Computer Networking</p>
+        <p>- IT Server</p>
+      </div>
+    </section>
+
+    <!--dokumentasi-->
+    <section class="documentation" id="documentation">
+      <div class="title">
+        <h2>Dokumentasi <br />Kegiatan di Sekolah</h2>
+      </div>
+      <div class="carrousel">
+        <div class="carrousel-wrapper">
+          <a class="prev" onclick="prevSlide() ">&#10094;</a>
+          <a class="next" onclick="showSlides()">&#10095</a>
+          <div class="carrousel-items move">
+            <img src="./image (1).jpg" />
+          </div>
+          <div class="carrousel-items move">
+            <img src="./lobby.jpg" />
+            </div>
+        <div class="carrousel-items move">
+          <img src="./image (4).jpg" />
+        </div>
+        <div class="carrousel-items move">
+          <img src="./image (5).jpg" />
+        </div>
+        <div style="text-align: center; margin: -5vh">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2>CONTACT US!!</h2>
+      <form action="https://formsubmit.co/2abb91c87052f74d233b5a628219e12b " method="POST">
+        <input type="text" name="name" placeholder="Nama" required>
+        <input type="email" name="email" placeholder="Email"  required>
+        <textarea name="Pesan Anda!" placeholder="Pesan Anda!" required></textarea>
+        <button type="submit" id="btnSend">Send</button>
+   </form>
+   <div class="map">
+     <div style="overflow:hidden;max-width:100%;width:500px;height:500px;"><div id="g-mapdisplay" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=SMK+Negeri+1+Cerme,+Jalan+Jurit,+Cerme+Kidul,+Gresik+Regency,+East+Java,+Indonesia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="googlemaps-made" href="https://www.bootstrapskins.com/themes" id="get-data-for-embed-map">premium bootstrap themes</a><style>#g-mapdisplay img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+    <p>Map SMKN 1 CERME</p>
+   </div>
+    </section>
+    
+    <footer>
+      <h4>WEBISTE PROJECT P5 - KELOMPOK 5 (TKJ 2)</h4>
+    </footer>
+
+    
+    <script type="text/javascript" src="ya.js"></script>
+  </body>
+</html>
